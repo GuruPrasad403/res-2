@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body,.main{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5% 45% 25% 50%;
+}
+/* .element{
+    border: 2px solid #333;
+    background-color: violet;
+} */
+#ele1,#ele2,#ele5{
+    grid-column: 1/3;
+}
+#ele1 h5{
+    margin: 1em;
+}
+#ele1 h5 i{
+    background-color: #333;
+    border-radius: 50%;
+    padding: 5px;
+    color: aliceblue;
+}
+#ele1,#ele4{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;    
+}
+#ele2{
+    padding: 1em;
+    padding-left:10em;
+}
+#ele2 h1{
+    font-size: 50pt;
+    font-family: sans-serif ;
+    font-weight: 500;
+    margin: 0.5em;
+}
+#ele3{
+       padding: 3em 9em 0em 9em;
+}
+#ele3 p{
+    text-align: justify;
+}
+#ele4{
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-evenly;
+    padding: 1em 4em;
+}
+#ele4 h3{
+    text-align: start;
+    width: 40%;
+    padding: 0.5em;
+    border-top: 2px solid #333;    
+}
+#ele4 h3:first-child{
+    text-decoration: underline rgb(116, 116, 218);
+}
+#ele5{
+    background: url(https://www.pixel4k.com/wp-content/uploads/2022/05/girl-bokeh-brown-haired-jacket-4k_1653333543.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 20%;
+}
+@media screen and (max-width: 600px) {
+    .main{
+        grid-template-rows: 5% 30% 25% 25% 15% ;
+    }
+    #ele3,#ele4{
+        grid-column: 1/3;
+    }
+    #ele2{
+        padding: 1em;
+    }
+    #ele2 h1{
+        font-size: 30pt;
+    }
+    #ele3{
+        padding: 4em 2em 0.5em 2em;
+ }
+ #ele4{
+    align-items: center;
+ }
+ #ele4 h3{
+    width: 100%;
+ }
+}
