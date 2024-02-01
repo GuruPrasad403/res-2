@@ -10,7 +10,7 @@ html,body,.main{
 .main{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 5% 45% 30% 40%;
+    grid-template-rows: 5% 45% 25% 50%;
 }
 /* .element{
     border: 2px solid #333;
@@ -69,7 +69,7 @@ html,body,.main{
     background: url(https://www.pixel4k.com/wp-content/uploads/2022/05/girl-bokeh-brown-haired-jacket-4k_1653333543.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 40% 10%;
+    background-position: 70% 20%;
 }
 @media screen and (max-width: 600px) {
     .main{
